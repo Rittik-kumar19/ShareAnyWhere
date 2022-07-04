@@ -6,7 +6,7 @@ module.exports = async ({ from, to, subject, text, html}) => {
             secure: false, // true for 465, false for other ports
             auth: {
                 user: process.env.MAIL_USER, // generated ethereal user
-                pass: process.env.MAIL_PASSWORD, // generated ethereal password
+                pass: process.env.MAIL_PASS, // generated ethereal password
             },
         });
 
